@@ -1,0 +1,23 @@
+{
+  "name": "typescript-angular-spa-template",
+  "main": "index.js",
+  "homepage": "https://github.com/jbonfardeci/generator-typescript-angular-spa",
+  "authors": [
+    "John Bonfardeci <john.bonfardeci@gmail.com>"
+  ],
+  "description": "A template for a TypeScript-Angular single-page application.",
+  "keywords": [
+    "angular",
+    "typescript",
+    "spa",
+    "template"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

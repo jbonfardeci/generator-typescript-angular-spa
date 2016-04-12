@@ -1,0 +1,9 @@
+{
+  "name": "typescript-angular-spa-template",
+  "description": "",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
