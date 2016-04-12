@@ -22,8 +22,8 @@ var App;
     angular.module('app', ['app.controllers', 'app.routes', 'app.services', 'app.directives', 'ui.router', 'ngSanitize'])
         .run(['$rootScope', '$state', '$stateParams', run]);
     function run($rootScope, $state, $stateParams) {
-        $rootScope['$state'] = $state;
-        $rootScope['$stateParams'] = $stateParams;
+        $rootScope.$state = $state;
+        $rootScope.$stateParams = $stateParams;
     }
 })(App || (App = {}));
 var App;
