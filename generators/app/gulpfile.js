@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 
 gulp.task('default', function(){});
 
-// Compile and combine TypeScript files into appBundle.js
+// Compile and combine all TypeScript files in ts/ into www/js/appBundle.js
 gulp.task('ts', function(){
     gulp.src("ts/**/*.ts")
         .pipe(typescript({
@@ -22,7 +22,7 @@ gulp.task('ts', function(){
     ;
 });
 
-// Minify and uglify JavaScript files.
+// Minify and uglify all JavaScript files in www/js/ to into www/js/appBundle.min.js
 gulp.task('min', function(){
     gulp.src('www/js/*.js')
         .pipe(concat('appBundle.min.js'))
@@ -31,6 +31,7 @@ gulp.task('min', function(){
     ;
 });
 
+// Compile all SASS (.scss) files to www/css/
 gulp.task('sass', function () {
   return gulp.src('sass/**/*.scss')
     .pipe(sass({

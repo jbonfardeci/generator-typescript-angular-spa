@@ -31,9 +31,11 @@ You will need to run `npm install` in both the root of the Yeomen generator dire
 ### Gulp Tasks
 Gulp tasks are located in the root `gulpfile.js` and the `generators/app/gulpfile.js` files. The first is for the Yeoman project, the latter for the TypeScript-Angular project.
 ```
-gulp ts // compiles TypeScript in ts dir
+gulp ts // compiles TypeScript from generators/app/ts/ dir to generators/app/www/js/
 
-gulp min // uglifies and combines all JavaScript files into www/js dir
+gulp min // uglifies and combines all JavaScript files located in generators/www/js/ dir
+
+gulp sass // compiles SASS (.scss) files from generators/app/sass/ dir to generators/www/css/ dir
 ``` 
 
 ## License
