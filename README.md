@@ -23,6 +23,19 @@ yo typescript-angular-spa
  * Yeoman can be too opinionated at times but is easily convinced not to be.
  * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
+## GulpJS
+This project uses [GulpJS](https://gulpjs.com) to handle build tasks such as the compilation of TypeScript to JavaScript and to minify/uglify JavaScript.
+To reinstall the Gulp dependencies, run `npm install` from your terminal or command line. This will download all dependecies listed in `package.json` to a `node_modules` directory. 
+You will need to run `npm install` in both the root of the Yeomen generator directory and in the `generators/app/` directory.
+
+### Gulp Tasks
+Gulp tasks are located in the root `gulpfile.js` and the `generators/app/gulpfile.js` files. The first is for the Yeoman project, the latter for the TypeScript-Angular project.
+```
+gulp ts // compiles TypeScript in ts dir
+
+gulp min // uglifies and combines all JavaScript files into www/js dir
+``` 
+
 ## License
 
 MIT © [John Bonfardeci](https://github.com/jbonfardeci)
